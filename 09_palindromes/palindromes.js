@@ -1,5 +1,5 @@
 const palindromes = function (input) {
-    let original = input.replace(/[^\w\s\']|_/g, "").replace(/\s+/g, " ");
+    let original = input.replace(/[^\w\s\']|_/g, "").replace(/\s+/g, " ").replace(/\s/g, '');;
     original = original.toLowerCase();
     let splitting = original.split(""); 
     let reverse = splitting.reverse();
