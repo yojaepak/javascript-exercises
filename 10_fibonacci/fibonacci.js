@@ -1,5 +1,11 @@
 const fibonacci = function(input) {
-    let value = 0;
+    if (input < 0){
+        return "OOPS";
+    }
+    else if (typeof input === "string"){
+        input = parseInt(input);
+    }
+    let value = 1;
     let last = 1;
     let current = 1;
     while (input > 2) {
