@@ -20,8 +20,13 @@ const power = function(first, second) {
 	return first ** second;
 };
 
-const factorial = function() {
-	
+const factorial = function(first) {
+	let total = 1;
+	while (first > 0) {
+    total *= first;
+    first--;
+  }
+  return total;
 };
 
 // Do not edit below this line
