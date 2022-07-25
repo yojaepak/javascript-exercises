@@ -7,14 +7,16 @@ const subtract = function(first, second) {
 };
 
 const sum = function(first) {
-  total = first.reduce()
+  totalValue = first.reduce((total, next) => total + next , 0);
+  return totalValue;
 };
 
-const multiply = function() {
-
+const multiply = function(first) {
+  totalMultiply = first.reduce((total, next) => total * next, 1);
+  return totalMultiply;
 };
 
-const power = function() {
+const power = function(first, second) {
 	
 };
 
